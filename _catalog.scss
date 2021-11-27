@@ -1,0 +1,77 @@
+.top_catalog {
+  min-height: 400px;
+  padding-bottom: 126px;
+  background-image: url(img/top-catalog.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-color: rgb(108, 108, 108);
+}
+
+.title_catalog {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  color: #ffffff;
+  margin-top: 128px;
+}
+
+/* Ссылки и сортировка каталога */
+.link-select-box {
+  box-sizing: border-box;
+  height: 136px;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link-catalog {
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: $transit;
+
+  &:hover {
+    text-decoration-color: #000000;
+  }
+}
+
+.slash {
+  margin: 0 10px;
+}
+
+.sort {
+  width: 288px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c4c4c4;
+  border-radius: 20px;
+  padding-left: 14px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url(img/triangle-down.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: center;
+  background-color: transparent;
+  width: 100%;
+}
+
+.arrow-down {
+  height: 29px;
+}

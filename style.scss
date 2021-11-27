@@ -1,0 +1,483 @@
+@import "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - #{$widthSite / 2});
+  padding-right: calc(50% - #{$widthSite / 2});
+}
+
+/* Заголовок и описание */
+.top {
+  min-height: 735px;
+  padding-bottom: 100px;
+  background-image: url(img/top.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-color: rgb(159, 159, 159);
+  position: relative;
+
+  &__text {
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: underline;
+    transition: $transit;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 76px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+  &__input {
+    width: 288px;
+    height: 41px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: transparent;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    outline: none;
+
+    &:focus {
+      border: 1px solid white;
+    }
+
+    &::placeholder {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+
+    &[type="text"]::-ms-clear {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+    &[type="text"]::-ms-reveal {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+    &[type="search"]::-webkit-search-decoration,
+    &[type="search"]::-webkit-search-cancel-button,
+    &[type="search"]::-webkit-search-results-button,
+    &[type="search"]::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+
+ 
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: $transit;
+
+    &:hover {
+      text-decoration-color: white;
+    }
+  }
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.title {
+  max-width: 792px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  color: #ffffff;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 70px;
+  right: calc(50% - #{$widthSite / 2} + 10px);
+}
+
+/* Мебель для... */
+.for {
+  padding-top: 64px;
+
+  &__content {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__item {
+    display: grid;
+    min-height: 415px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 4;
+    align-content: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #ffffff;
+    transition: $transit;
+    padding: 16px;
+
+    &:hover {
+      font-size: 36px;
+    }
+  }
+
+  &__item_big {
+    grid-column: span 6;
+  }
+
+  &__item_1 {
+    background-image: url(img/forrest.jpg);
+
+    &:hover {
+      background-image: $colorHover, url(img/forrest.jpg);
+    }
+  }
+
+  &__item_2 {
+    background-image: url(img/forwork.jpg);
+
+    &:hover {
+      background-image: $colorHover, url(img/forwork.jpg);
+    }
+  }
+
+  &__item_3 {
+    background-image: url(img/forbath.jpg);
+
+    &:hover {
+      background-image: $colorHover, url(img/forbath.jpg);
+    }
+  }
+
+  &__item_4 {
+    background-image: url(img/forchild.jpg);
+
+    &:hover {
+      background-image: $colorHover, url(img/forchild.jpg);
+    }
+  }
+
+  &__item_5 {
+    background-image: url(img/forbath.jpg);
+
+    &:hover {
+      background-image: $colorHover, url(img/forbath.jpg);
+    }
+  }
+}
+
+/* Cпец. предложения, Каталог */
+.product-box {
+  padding-top: 72px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 56px;
+}
+
+.product {
+  width: ($widthSite - $gap * 2) / 3;
+  position: relative;
+  transition: $transit;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(120, 120, 120, 0.2);
+    transform: scale(1.02);
+    .product__icons {
+      display: flex;
+    }
+    .product__img::before {
+      opacity: 0.5;
+    }
+  }
+
+  &__icons {
+    display: none;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+
+  &__icon {
+    transition: $transit;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:hover path {
+      fill: white;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border: none;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      opacity: 0;
+      display: block;
+      transition: $transit;
+    }
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 12px;
+  }
+
+  &__value {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+  }
+
+  &__price-old {
+    text-decoration-line: line-through;
+    color: #888888;
+  }
+}
+
+.link-box {
+  height: 128px;
+  padding-top: 40px;
+
+  &__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration-line: underline;
+    transition: $transit;
+
+    &:hover {
+      color: #888888;
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+/* Стили footer */
+.footer {
+  background: #f7f6f6;
+  min-height: 207px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 40px;
+
+  &__content {
+    display: flex;
+    gap: 177px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 128px;
+  }
+
+  &__nav_item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: $transit;
+
+    &:hover {
+      text-decoration-color: #888888;
+    }
+  }
+
+  &__icons {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  &__icon {
+    transition: $transit;
+
+    &:hover {
+      filter: brightness(0%);
+      transform: scale(1.05);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 16px;
+    color: #000000;
+  }
+
+  &__input {
+    width: 275px;
+    height: 46px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 12px;
+     font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid #000;
+    }
+
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      line-height: 18px;
+      color: #c4c4c4;
+    }
+  }
+
+  
+}
+
+.button {
+  width: 275px;
+  min-height: 46px;
+  padding: 10px;
+  background: rgba(222, 215, 215, 0.41);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  transition: $transit;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+@import "catalog";
+@import "cart";
+@import "tablet";
+@import "mobile";
