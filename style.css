@@ -166,6 +166,34 @@ body {
   margin-bottom: 16px;
 }
 
+.hellocat:after {
+  z-index: 10;
+  content: " ";
+  position: fixed;
+  top: 150px;
+  right: calc(50% - 600px - 1000px);
+  background-image: url(img/cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 200px;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.hellocat:hover:after {
+  transform: translate(calc(50% - 600px - 500px));
+  -moz-transform: translate(calc(50% - 600px - 500px));
+  /* Для Firefox */
+  -ms-transform: translate(calc(50% - 600px - 500px));
+  /* Для IE */
+  -webkit-transform: translate(calc(50% - 600px - 500px));
+  /* Для Safari, Chrome, iOS */
+  -o-transform: translate(calc(50% - 600px - 500px));
+  opacity: 1;
+}
+
 .arrow-down {
   position: absolute;
   bottom: 70px;
@@ -1019,6 +1047,16 @@ body {
   .arrow-down {
     display: none;
   }
+  .hellocat:hover:after {
+    transform: translate(0);
+    -moz-transform: translate(0);
+    /* Для Firefox */
+    -ms-transform: translate(0);
+    /* Для IE */
+    -webkit-transform: translate(0);
+    /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0);
+  }
   .for__item {
     height: 268px;
   }
@@ -1128,6 +1166,16 @@ body {
   }
   .logo {
     width: 99px;
+  }
+  .hellocat:hover:after {
+    transform: translate(0);
+    -moz-transform: translate(0);
+    /* Для Firefox */
+    -ms-transform: translate(0);
+    /* Для IE */
+    -webkit-transform: translate(0);
+    /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0);
   }
   .arrow-down {
     display: none;
@@ -1289,6 +1337,16 @@ body {
 }
 
 @media (max-width: 342px) {
+  .hellocat:hover:after {
+    transform: translate(0);
+    -moz-transform: translate(0);
+    /* Для Firefox */
+    -ms-transform: translate(0);
+    /* Для IE */
+    -webkit-transform: translate(0);
+    /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0);
+  }
   .product img {
     width: 100%;
   }

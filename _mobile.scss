@@ -65,6 +65,16 @@
     width: 99px;
   }
 
+  .hellocat:hover {
+    &:after {
+      transform: translate(0);
+      -moz-transform: translate(0); /* Для Firefox */
+      -ms-transform: translate(0); /* Для IE */
+      -webkit-transform: translate(0); /* Для Safari, Chrome, iOS */
+      -o-transform: translate(0);
+    }
+  }
+
   .arrow-down {
     display: none;
   }
@@ -254,6 +264,16 @@
 }
 
 @media (max-width: 342px) {
+  .hellocat:hover {
+    &:after {
+      transform: translate(0);
+      -moz-transform: translate(0); /* Для Firefox */
+      -ms-transform: translate(0); /* Для IE */
+      -webkit-transform: translate(0); /* Для Safari, Chrome, iOS */
+      -o-transform: translate(0);
+    }
+  }
+
   .product {
     img {
       width: 100%;

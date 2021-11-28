@@ -131,6 +131,32 @@ body {
   margin-bottom: 16px;
 }
 
+.hellocat:after {
+  z-index: 10;
+  content: " ";
+  position: fixed;
+  top: 150px;
+  right: $cat1;
+  background-image: url(img/cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 200px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.hellocat:hover {
+  &:after {
+    transform: translate($cat2);
+    -moz-transform: translate($cat2); /* Для Firefox */
+    -ms-transform: translate($cat2); /* Для IE */
+    -webkit-transform: translate($cat2); /* Для Safari, Chrome, iOS */
+    -o-transform: translate($cat2);
+    opacity: 1;
+  }
+}
+
 .arrow-down {
   position: absolute;
   bottom: 70px;
