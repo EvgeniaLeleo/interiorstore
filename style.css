@@ -23,7 +23,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  background-color: #878787;
+  background-color: #a39881;
   position: relative;
 }
 
@@ -606,7 +606,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  background-color: #4b4b4b;
+  background-color: #4e464e;
 }
 
 .title_catalog {
@@ -699,7 +699,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  background-color: #373737;
+  background-color: #605957;
 }
 
 .title_cart {
