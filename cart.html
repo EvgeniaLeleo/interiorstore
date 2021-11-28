@@ -16,11 +16,9 @@
   <body>
     <div class="top_cart center">
       <header class="header">
-        <a href="index.html"
-          >
-          <img class="logo" src="img/logo.svg" alt="Логотип"
-        />
-      </a>
+        <a href="index.html">
+          <img class="logo" src="img/logo.svg" alt="Логотип" />
+        </a>
         <input class="header__input" type="search" placeholder="Поиск" />
         <nav class="menu">
           <a class="menu__link" href="catalog.html">Каталог</a>
@@ -28,7 +26,8 @@
         </nav>
         <nav class="menu-mobile">
           <a class="menu-mobile__link" href="#">
-            <svg class="menu-mobile__link_img"
+            <svg
+              class="menu-mobile__link_img"
               width="17"
               height="16"
               viewBox="0 0 17 16"
@@ -44,7 +43,8 @@
             </svg>
           </a>
           <a class="menu-mobile__link" href="catalog.html">
-            <svg class="menu-mobile__link_img"
+            <svg
+              class="menu-mobile__link_img"
               width="20"
               height="21"
               viewBox="0 0 20 21"
@@ -117,7 +117,8 @@
             </svg>
           </a>
           <a class="menu-mobile__link" href="cart.html">
-            <svg class="menu-mobile__link_img"
+            <svg
+              class="menu-mobile__link_img"
               width="19"
               height="17"
               viewBox="0 0 19 17"
@@ -155,14 +156,28 @@
                   обеденный стол.
                 </p>
                 <p class="cart-item__price">34 000 руб.</p>
-                <div class="cart-item__links">
-                  <a class="cart-link" href="#">Избранные</a>
-                  <a class="cart-link" href="#">Удалить</a>
+                <div class="cart-item__buttons">
+                  <button class="cart-button">
+                    Избранные
+                  </button>
+                  <button class="cart-button">
+                    Удалить
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="cart-item__count">
-              <input class="cart-item__number" type="number" value="1" min="1" />
+            <div class="cart-item__input-wrapper">
+              <input
+                class="cart-item__number"
+                type="number"
+                value="1"
+                min="1" step="1"
+              />
+              <div class="cart-item__control-wrapper">
+                <button class="cart-item__input-control cart-item__input-control_up"></button
+                >
+                <button class="cart-item__input-control cart-item__input-control_down"></button>
+              </div>
             </div>
           </div>
           <div class="cart-item">
@@ -179,14 +194,28 @@
                   декора.
                 </p>
                 <p class="cart-item__price">80 000 руб.</p>
-                <div class="cart-item__links">
-                  <a class="cart-link" href="#">Избранные</a>
-                  <a class="cart-link" href="#">Удалить</a>
+                <div class="cart-item__buttons">
+                  <button class="cart-button">
+                    Избранные
+                  </button>
+                  <button class="cart-button">
+                    Удалить
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="cart-item__count">
-              <input class="cart-item__number" type="number" value="1" min="1" />
+            <div class="cart-item__input-wrapper">
+              <input
+                class="cart-item__number"
+                type="number"
+                value="1"
+                min="1" step="1"
+              />
+              <div class="cart-item__control-wrapper">
+                <button class="cart-item__input-control cart-item__input-control_up"></button
+                >
+                <button class="cart-item__input-control cart-item__input-control_down"></button>
+              </div>
             </div>
           </div>
         </div>

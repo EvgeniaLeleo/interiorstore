@@ -79,20 +79,20 @@ body {
       color: #ffffff;
     }
 
-    &[type="text"]::-ms-clear {
+    &::-ms-clear {
       display: none;
       width: 0;
       height: 0;
     }
-    &[type="text"]::-ms-reveal {
+    &::-ms-reveal {
       display: none;
       width: 0;
       height: 0;
     }
-    &[type="search"]::-webkit-search-decoration,
-    &[type="search"]::-webkit-search-cancel-button,
-    &[type="search"]::-webkit-search-results-button,
-    &[type="search"]::-webkit-search-results-decoration {
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
       display: none;
     }
   }
@@ -416,8 +416,6 @@ body {
 
   &__text {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     padding-bottom: 16px;
@@ -461,8 +459,6 @@ body {
   box-sizing: border-box;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 18px;
   color: #000000;

@@ -246,13 +246,28 @@
       font-size: 12px;
       line-height: 15px;
     }
-
-    &__number {
-      padding-left: 20px;
-    }
   }
 
   .product-box_cart {
     padding-top: 48px;
+  }
+}
+
+@media (max-width: 342px) {
+  .product {
+    img {
+      width: 100%;
+    }
+  }
+
+  .cart__button {
+    width: 100%;
+  }
+
+  .cart-item {
+    &__info {
+      width: 100%;
+      margin-right: 10px;
+    }
   }
 }
