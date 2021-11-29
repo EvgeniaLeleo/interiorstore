@@ -77,8 +77,6 @@
   &__form-data {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    // line-height: 17px;
-    // height: 62px;
     width: 100%;
     outline: none;
     border: none;
@@ -96,6 +94,10 @@
     text-align: center;
     margin-top: 28px;
     margin-bottom: 18px;
+  }
+
+  &__final-price {
+    font-weight: 500;
   }
 
   &__button {

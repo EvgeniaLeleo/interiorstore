@@ -38,6 +38,12 @@
   &:hover {
     text-decoration-color: #000000;
   }
+
+  &_inactive {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
 }
 
 .slash {

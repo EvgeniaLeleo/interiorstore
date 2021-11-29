@@ -98,6 +98,12 @@ body {
   }
 }
 
+.logo {
+  fill: #fff;
+  width: 198px;
+  height: 44px;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -287,12 +293,21 @@ body {
   &__icon {
     transition: $transit;
 
-    &:hover {
-      transform: scale(1.2);
+    &_cart {
+      fill: #c4c4c4;
+      width: 18px;
+      height: 21px;
     }
 
-    &:hover path {
+    &_fav {
+      fill: #c4c4c4;
+      width: 18px;
+      height: 21px;
+    }
+
+    &:hover {
       fill: white;
+      transform: scale(1.2);
     }
   }
 
@@ -380,6 +395,12 @@ body {
   padding-top: 32px;
   padding-bottom: 40px;
 
+  &__logo {
+    fill: #000;
+    width: 198px;
+    height: 44px;
+  }
+
   &__content {
     display: flex;
     gap: 177px;
@@ -427,10 +448,27 @@ body {
 
   &__icon {
     transition: $transit;
+    fill: #888888;
+
+    &_instagram {
+      width: 23.5px;
+      height: 23.5px;
+      align-self: center;
+    }
+
+    &_twitter {
+      width: 24px;
+      height: 19.5px;
+    }
+
+    &_facebook {
+      width: 12.5px;
+      height: 23.5px;
+    }
 
     &:hover {
       filter: brightness(0%);
-      transform: scale(1.05);
+      transform: scale(1.07);
     }
   }
 
