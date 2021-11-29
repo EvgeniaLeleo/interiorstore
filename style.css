@@ -362,14 +362,14 @@ body {
 
 .product__icon_cart {
   fill: #c4c4c4;
-  width: 18px;
-  height: 21px;
+  width: 20px;
+  height: 22px;
 }
 
 .product__icon_fav {
   fill: #c4c4c4;
-  width: 18px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
 }
 
 .product__icon:hover {
@@ -551,21 +551,21 @@ body {
 }
 
 .footer__icon_instagram {
-  width: 23.5px;
-  height: 23.5px;
+  width: 29px;
+  height: 29px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 .footer__icon_twitter {
-  width: 24px;
-  height: 19.5px;
+  width: 25px;
+  height: 20px;
 }
 
 .footer__icon_facebook {
-  width: 12.5px;
-  height: 23.5px;
+  width: 14px;
+  height: 24px;
 }
 
 .footer__icon:hover {
@@ -1200,16 +1200,29 @@ body {
             align-items: center;
     gap: 34px;
   }
+  .menu-mobile__link_img-search {
+    width: 17px;
+    height: 16px;
+  }
+  .menu-mobile__link_img-catalog {
+    width: 20px;
+    height: 21px;
+  }
+  .menu-mobile__link_img-cart {
+    width: 25px;
+    height: 25px;
+  }
   .menu-mobile__link_img {
+    fill: #fff;
+    stroke: #fff;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
   .menu-mobile__link_img:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  .menu-mobile__link_img:hover path {
     fill: #000000;
+    stroke: #000000;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .menu-mobile__link_img:hover rect {
     fill: #000000;

@@ -44,15 +44,30 @@
     align-items: center;
     gap: 34px;
 
+    &__link_img-search {
+      width: 17px;
+      height: 16px;
+    }
+
+    &__link_img-catalog {
+      width: 20px;
+      height: 21px;
+    }
+
+    &__link_img-cart {
+      width: 25px;
+      height: 25px;
+    }
+
     &__link_img {
+      fill: #fff;
+      stroke: #fff;
       transition: $transit;
 
       &:hover {
-        transform: scale(1.05);
-      }
-
-      &:hover path {
         fill: #000000;
+        stroke: #000000;
+        transform: scale(1.2);
       }
 
       &:hover rect {
